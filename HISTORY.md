@@ -23,6 +23,8 @@ Here are the ones I've found, roughly in order of most obsolete/broken to newest
 
 5. [**@dbason**](http://github.com/dbason)'s tree, forked from Yeradis's tree, and last updated in 2016: https://github.com/dbason/crystalhd
 
+6. [**@linuxgorl**](http://github.com/linuxgorl)'s tree, forked from dbason's tree, compiles on >= Linux 5.10. https://github.com/linuxgorl/crystalhd
+
 **Only the last version can be built and used without error on a modern kernel.** ([**@dlenski**](http://github.com/dlenski) is using it with kernel 4.4.0 and BCM70015.)
 
 
