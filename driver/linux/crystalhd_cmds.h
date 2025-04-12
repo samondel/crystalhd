@@ -88,4 +88,7 @@ BC_STATUS crystalhd_setup_cmd_context(struct crystalhd_cmd *ctx, struct crystalh
 BC_STATUS crystalhd_delete_cmd_context(struct crystalhd_cmd *ctx);
 bool crystalhd_cmd_interrupt(struct crystalhd_cmd *ctx);
 
+int bc_get_userhandle_count(struct crystalhd_cmd *ctx);
+BC_STATUS bc_cproc_release_user(struct crystalhd_cmd *ctx, crystalhd_ioctl_data *idata);
+
 #endif
