@@ -59,4 +59,22 @@ bool crystalhd_flea_notify_event(struct crystalhd_hw *hw, enum BRCM_EVENT EventC
 
 bool flea_GetPictureInfo(struct crystalhd_hw *hw, struct crystalhd_rx_dma_pkt * rx_pkt,
 						 uint32_t *PicNumber, uint64_t *PicMetaData);
+
+void crystalhd_flea_core_reset(struct crystalhd_hw *hw);
+void crystalhd_flea_disable_interrupts(struct crystalhd_hw *hw);
+void crystalhd_flea_enable_interrupts(struct crystalhd_hw *hw);
+void crystalhd_flea_clear_interrupts(struct crystalhd_hw *hw);
+bool crystalhd_flea_detect_ddr3(struct crystalhd_hw *hw);
+void crystalhd_flea_init_dram(struct crystalhd_hw *hw);
+bool crystalhd_flea_detect_fw_alive(struct crystalhd_hw *hw);
+void crystalhd_flea_handle_PicQSts_intr(struct crystalhd_hw *hw);
+void crystalhd_flea_update_tx_buff_info(struct crystalhd_hw *hw);
+void crystalhd_flea_init_temperature_measure (struct crystalhd_hw *hw, bool bTurnOn);
+void crystalhd_flea_update_temperature(struct crystalhd_hw *hw);
+bool crystalhd_flea_wake_up_hw(struct crystalhd_hw *hw);
+BC_STATUS crystalhd_flea_fw_cmd_post_proc(struct crystalhd_hw *hw, BC_FW_CMD *fw_cmd);
+void crystalhd_flea_clear_rx_errs_intrs(struct crystalhd_hw *hw);
+BC_STATUS crystalhd_flea_hw_fire_rxdma(struct crystalhd_hw *hw, struct crystalhd_rx_dma_pkt *rx_pkt);
+uint32_t flea_GetRptDropParam(struct crystalhd_hw *hw, void* pRxDMAReq);
+
 #endif
